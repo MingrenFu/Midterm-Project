@@ -856,6 +856,20 @@ body {
   -webkit-filter: drop-shadow(3px 3px 3px #555555);
   filter: drop-shadow(3px 3px 3px #555555);
 }
+  
+.post_message {
+  width: 500px;
+  height: 300px;
+  border-radius: 20px;
+  background-color: rgba(40,40,40,0.6);
+  position: absolute;
+  left: 35%;
+  top: 25%;
+  font-size: 25pt;
+  color: rgba(245,245,245,1);
+  -webkit-filter: drop-shadow(3px 3px 3px #555555);
+  filter: drop-shadow(3px 3px 3px #555555);
+}
 
 .submit_message:before {
   content: "Thanks for Signing Up!";
