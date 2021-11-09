@@ -1,1 +1,7 @@
+const app = {
 
+  initialize: function () {
+
+    });
+  },
+  
