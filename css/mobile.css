@@ -952,4 +952,18 @@
     position: relative;
     bottom:-25rem;
   }
+ 
+ .redFormInput{
+  width : 250px;
+  height : 35px;
+  padding : 10px;
+  font-size : 13pt;
+  color : rgba(92,128,132,1);
+  margin-top:7px;
+  margin-left : 40%;
+  margin-bottom: 45px;
+  outline: none;
+  border : solid 1px red;
+  border-radius : 5px;
+}
 }
