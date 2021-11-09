@@ -5,6 +5,17 @@ const app = {
       this.formChecker();
     });
   },
+    
+   postContent: function(){
+     document.getElementById('postButton').addEventListener('click', () => {
+     this.addWindow();
+     });
+   },
+  
+    addWindow: function() {
+      let mainSection = document.getElementById("post_section");
+      mainSection.classList.add("post_message");
+    }
   
     formChecker: function() {
     let userName = document.getElementById("username").value;
