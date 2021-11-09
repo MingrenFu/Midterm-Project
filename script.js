@@ -10,7 +10,8 @@ const app = {
     let userName = document.getElementById("username").value;
     let email = document.getElementById("email").value;
     let number = document.getElementById("number").value;
-    if (userName !== '' && email !== '' && validateEmail(email) == true && number !== '') {
+    let comment = document.getElementById("comment").value;
+    if (userName !== '' && email !== '' && validateEmail(email) == true && number !== '' && comment !== '') {
       document.getElementById("submit_btn").style.display = "none";
       const element1 = document.getElementById("loading_animation");
       element1.classList.add("loader");
@@ -18,10 +19,13 @@ const app = {
       let userNameInput = document.getElementById("username");
       let emailInput = document.getElementById("email");
       let emailLabel = document.getElementById("emailNote");
-      firstNameBox.classList.remove("redFormInput");
-      lastNameBox.classList.remove("redFormInput");
-      emailBox.classList.remove("redFormInput");
+      let numberInput = document.getElementById("number");
+      let commentInput = document.getElementById("comment");
+      userNameInput.classList.remove("redFormInput");
+      emailInput.classList.remove("redFormInput");
       emailLabel.classList.remove("emailErrorLabel");
+      numberInput.classList.remove("redFormInput");
+      commentInput.classList.remove("redFormInput");
       console.log ("Valid Content");
       setTimeout(function(){ window.location.replace("index.html"); }, 10000);
     }
