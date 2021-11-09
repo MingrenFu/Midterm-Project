@@ -33,36 +33,44 @@ const app = {
       const element1 = document.getElementById("loading_animation");
       element1.classList.remove("loader");
       if (userName == '') {
-        let firstNameBox = document.getElementById("firstName");
-        firstNameBox.classList.add("redFormInput");
+        let userNameInput = document.getElementById("username");
+        userNameInput.classList.add("redFormInput");
       }
       if (userName !== '') {
-        let firstNameBox = document.getElementById("firstName");
-        firstNameBox.classList.remove("redFormInput");
+        let userNameInput = document.getElementById("username");
+        userNameInput.classList.remove("redFormInput");
       }
       if (email == '') {
-        let emailBox = document.getElementById("email");
-        emailBox.classList.add("redFormInput");
+        let emailInput = document.getElementById("email");
+        emailInput.classList.add("redFormInput");
       }
       if (email !== '') {
         if (validateEmail(email) == false) {
           let emailLabel = document.getElementById("emailNote");
           emailLabel.classList.add("emailErrorLabel");
-          let emailBox = document.getElementById("email");
-          emailBox.classList.add("redFormInput");
+          let emailInput = document.getElementById("email");
+          emailInput.classList.add("redFormInput");
         } else {
-          let emailBox = document.getElementById("email");
-          emailBox.classList.remove("redFormInput");
+          let emailInput = document.getElementById("email");
+          emailInput.classList.remove("redFormInput");
           emailLabel.classList.remove("emailErrorLabel");
         }
       }
       if (number == '') {
-        let numberBox = document.getElementById("number").value;
-        numberBox.classList.add("redFormInput");
+        let numberInput = document.getElementById("number");
+        numberInput.classList.add("redFormInput");
       }
       if (number !== '') {
-        let numberBox = document.getElementById("number").value;
-        numberBox.classList.remove("redFormInput");
+        let numberInput = document.getElementById("number");
+        numberInput.classList.remove("redFormInput");
+      }
+      if (comment == '') {
+        let commentInput = document.getElementById("comment");
+        commentInput.classList.add("redFormInput");
+      }
+      if (comment !== '') {
+        let commentInput = document.getElementById("comment");
+        commentInput.classList.remove("redFormInput");
       }
     }
   }
